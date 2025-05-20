@@ -1,103 +1,303 @@
-import Image from "next/image";
+'use client';
+
+import Link from "next/link";
+import {
+  RiNextjsFill,
+  RiTailwindCssFill,
+  RiNodejsLine,
+} from "react-icons/ri";
+import { SiExpress, SiFastapi } from "react-icons/si";
+import { FaFacebookF, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { SiHtml5, SiLaravel, SiGit, SiTypescript, SiMysql } from "react-icons/si";
+import { FaWeight, FaFileInvoiceDollar, FaCalculator } from "react-icons/fa";
+
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+ const technologies = [
+  {
+    name: "Next.js",
+    icon: <RiNextjsFill size={60} className="text-white" />,
+    url: "https://nextjs.org/",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: <RiTailwindCssFill size={60} className="text-cyan-400" />,
+    url: "https://tailwindcss.com/",
+  },
+  {
+    name: "Node.js",
+    icon: <RiNodejsLine size={60} className="text-green-500" />,
+    url: "https://nodejs.org/",
+  },
+  {
+    name: "Express.js",
+    icon: <SiExpress size={60} className="text-white" />,
+    url: "https://expressjs.com/",
+  },
+  {
+    name: "FastAPI",
+    icon: <SiFastapi size={60} className="text-teal-400" />,
+    url: "https://fastapi.tiangolo.com/",
+  },
+  {
+    name: "HTML5",
+    icon: <SiHtml5 size={60} className="text-orange-500" />,
+    url: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
+  },
+  {
+    name: "Laravel",
+    icon: <SiLaravel size={60} className="text-red-600" />,
+    url: "https://laravel.com/",
+  },
+  {
+    name: "Git",
+    icon: <SiGit size={60} className="text-orange-500" />,
+    url: "https://git-scm.com/",
+  },
+  {
+    name: "TypeScript",
+    icon: <SiTypescript size={60} className="text-blue-500" />,
+    url: "https://www.typescriptlang.org/",
+  },
+  {
+    name: "MySQL",
+    icon: <SiMysql size={60} className="text-blue-700" />,
+    url: "https://www.mysql.com/",
+  },
+];
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+
+  return (
+    <div className="min-h-screen bg-black text-white flex flex-col">
+      {/* Navbar */}
+      <nav className="w-full bg-gray-900 p-4 shadow-md sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          <div className="text-2xl font-bold text-gray-600">Tebia</div>
+          <div className="flex space-x-6 text-lg">
+            <Link href="#home" className="hover:text-green-600 transition-colors duration-200">Home</Link>
+            <Link href="#about" className="hover:text-green-600 transition-colors duration-200">About</Link>
+            <Link href="#technology" className="hover:text-green-600 transition-colors duration-200">Technology</Link>
+            <Link href="#project" className="hover:text-green-600 transition-colors duration-200">Project</Link>
+            <Link href="#contact" className="hover:text-green-600 transition-colors duration-200">Contact</Link>
+          </div>
+        </div>
+      </nav>
+
+      {/* Home Section */}
+      <section
+        id="home"
+        className="py-20 px-4 text-white bg-[url('/assets/images/grid-bg.svg')] bg-cover bg-center flex flex-col items-center text-center"
+      >
+        <h1 className="text-4xl md:text-5xl font-bold mb-2">Hello, I am <span className="text-black bg-white px-2 rounded">Arjay Tebia</span></h1>
+        <p className="text-lg text-gray-200 mb-6">a Front-end Developer</p>
+
+        <div className="relative w-full max-w-3xl flex justify-center">
+          {/* <img
+      src="/assets/images/arjay.png"
+      alt=""
+      className="w-64 md:w-80 drop-shadow-2xl"
+    /> */}
+        </div>
+
+        <div className="mt-8 flex space-x-4">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/assets/docs/mark_cv.pdf"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded shadow"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            Download CV
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#project"
+            className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded shadow flex items-center space-x-2"
           >
-            Read our docs
+            <span>View Projects</span>
+            <span className="text-sm">🔍</span>
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+      </section>
+
+    <section
+  id="about"
+  className="min-h-screen px-6 bg-black text-white flex justify-center items-center"
+>
+  <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center justify-center gap-10">
+    {/* Badge Image */}
+    <div className="flex justify-center items-center w-full lg:w-1/2">
+      {/* <img
+        src="/assets/images/arjay.png"
+        alt="Arjay"
+        className="w-64 md:w-80 drop-shadow-2xl"
+      /> */}
+    </div>
+
+          {/* Text Content */}
+         <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
+      <h2 className="text-4xl font-bold text-white">
+        Hi, I'm Arjay, Nice to Meet You!
+      </h2>
+      <p className="text-lg text-gray-300">
+        I'm a curious and driven developer who loves turning ideas into real, working products.
+        Whether I'm building apps, solving problems, or learning something new, I'm all in.
+      </p>
+      <div className="space-y-4">
+        <p className="text-gray-300">
+          I'm Arjay Tebia, 23 years old, from Quezon City...
+        </p>
+        <p className="text-gray-300">
+          I'm a Front-end developer...
+        </p>
+        <p className="text-gray-300">
+          I'm always eager to explore new tech...
+        </p>
+      </div>
+      
+
+            <div className="flex justify-center lg:justify-start space-x-4 mt-6">
+        <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded shadow">
+          Get a Quote
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <a href="/assets/docs/mark_cv.pdf" className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded shadow">
+          View CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technologies Section */}
+      <section id="technology" className="py-20 px-4 text-center">
+        <h2 className="text-3xl font-semibold mb-4">Technologies</h2>
+        <p className="text-lg mb-8">I work with Next.js, Tailwind CSS, React, Node.js, and more.</p>
+        <div className="flex flex-wrap justify-center gap-10">
+          {technologies.map((tech) => (
+            <div
+              key={tech.name}
+              onClick={() => window.open(tech.url, "_blank")}
+              className="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center w-40 transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+            >
+              <div className="mb-4">{tech.icon}</div>
+              <span className="text-white text-lg">{tech.name}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="project" className="py-20 px-4 text-center bg-gray-800">
+        <h2 className="text-3xl font-semibold mb-4">Projects</h2>
+        <p className="text-lg mb-10">Here are some projects I have worked on recently.</p>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
+            {[
+            {
+              title: "BMI CALCULATOR",
+              description:
+              "AI-powered tool for detecting and classifying fish eye diseases using YOLO and image augmentation.",
+              image: "/assets/images/aqueyes.png",
+              status: "Private",
+              logo: <FaWeight className="text-white text-4xl mb-4" />,
+              tech: [
+              <RiNextjsFill key="next" className="text-white text-2xl" />,
+              <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+              <RiNodejsLine key="node" className="text-green-500 text-2xl" />,
+              ],
+            },
+            {
+              title: "INVOICE APP",
+              description:
+              "An e-learning platform for Axies Education Inc. using React, Node.js, and MySQL.",
+              image: "/assets/images/learningaxies.png",
+              status: "Live",
+              logo: <FaFileInvoiceDollar className="text-white text-4xl mb-4" />,
+              tech: [
+              <RiNodejsLine key="node" className="text-green-500 text-2xl" />,
+              <SiExpress key="express" className="text-white text-2xl" />,
+              <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+              ],
+            },
+            {
+              title: "CALCLATOR",
+              description:
+              "A streaming platform inspired by Twitch, with real-time chat and user interactions.",
+              image: "/assets/images/echo.png",
+              status: "Repo",
+              logo: <FaCalculator className="text-white text-4xl mb-4" />,
+              tech: [
+              <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+              <SiFastapi key="fastapi" className="text-teal-400 text-2xl" />,
+              ],
+            },
+            ].map((project, i) => (
+            <div
+              key={i}
+              className="bg-gray-900 rounded-xl overflow-hidden shadow-lg text-left hover:scale-105 transition-transform duration-300"
+            >
+              <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+              <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
+              <p className="text-sm text-gray-300 mb-4">{project.description}</p>
+              <div className="flex items-center gap-3 mb-4">{project.tech}</div>
+              <span
+                className={`inline-block px-3 py-1 text-xs font-semibold rounded-full ${
+                project.status === "Live"
+                  ? "bg-green-500"
+                  : project.status === "Repo"
+                  ? "bg-gray-500"
+                  : "bg-yellow-600"
+                }`}
+              >
+                {project.status}
+              </span>
+              </div>
+            </div>
+            ))}
+        </div>
+      </section>
+
+      {/* Social icons */}
+      <div className="flex justify-center space-x-6 my-10">
+        {[
+          {
+            icon: <FaFacebookF />,
+            url: "https://facebook.com/yourprofile",
+            color: "text-blue-600 hover:text-blue-800",
+            label: "Facebook",
+          },
+          {
+            icon: <FaGithub />,
+            url: "https://github.com/yourprofile",
+            color: "text-white hover:text-gray-400",
+            label: "GitHub",
+          },
+          {
+            icon: <FaLinkedinIn />,
+            url: "https://linkedin.com/in/yourprofile",
+            color: "text-blue-500 hover:text-blue-700",
+            label: "LinkedIn",
+          },
+          {
+            icon: <FaInstagram />,
+            url: "https://instagram.com/yourprofile",
+            color: "text-pink-500 hover:text-pink-700",
+            label: "Instagram",
+          },
+        ].map((item, index) => (
+          <a
+            key={index}
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 ${item.color} transition-colors duration-300`}
+            aria-label={item.label}
+          >
+            <span className="text-xl">{item.icon}</span>
+          </a>
+        ))}
+      </div>
     </div>
   );
 }
