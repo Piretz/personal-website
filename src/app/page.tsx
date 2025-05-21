@@ -181,78 +181,96 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="project" className="py-20 px-4 text-center bg-black">
+     <section id="project" className="py-20 px-4 text-center bg-black">
   <h2 className="text-3xl font-semibold mb-4 text-white">Projects</h2>
   <p className="text-lg text-gray-300 mb-10">Here are some projects I have worked on recently.</p>
 
-    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
-      {[
-        {
-          title: "BMI CALCULATOR",
-          description: "AI-powered tool for detecting and classifying fish eye diseases using YOLO and image augmentation.",
-          image: "/assets/images/bmi.png",
-          status: "Private",
-          url: "https://your-private-link.com", // replace with actual URL or leave blank
-          tech: [
-            <RiNextjsFill key="next" className="text-white text-2xl" />,
-            <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
-            <RiNodejsLine key="node" className="text-green-500 text-2xl" />,
-          ],
-        },
-        {
-          title: "INVOICE APP",
-          description: "An e-learning platform for Axies Education Inc. using React, Node.js, and MySQL.",
-          image: "/assets/images/invoice.png",
-          status: "Live",
-          url: "http://localhost:3001/login",
-          tech: [
-            <RiNodejsLine key="node" className="text-green-500 text-2xl" />,
-            <SiExpress key="express" className="text-white text-2xl" />,
-            <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
-          ],
-        },
-        {
-          title: "CALCULATOR",
-          description: "A streaming platform inspired by Twitch, with real-time chat and user interactions.",
-          image: "/assets/images/calculator.png",
-          status: "Repo",
-          url: "https://your-repo-link.com",
-          tech: [
-            <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
-            <SiFastapi key="fastapi" className="text-teal-400 text-2xl" />,
-          ],
-        },
-      ].map((project, i) => (
-        <div
-          key={i}
-          className="relative bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.03] hover:shadow-[0_0_30px_#10b981] transition duration-300 group"
-        >
-          <div className="absolute inset-0 border border-gray-700 rounded-xl group-hover:border-green-400 transition duration-300"></div>
+  <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
+    {[
+      {
+        title: "BMI CALCULATOR",
+        description: "A clean and simple Body Mass Index calculator that computes BMI based on height and weight inputs. Built for quick health checks with responsive UI.",
+        image: "/assets/images/bmi.png",
+        status: "Private",
+        url: "https://piretz.github.io/BmiCalculator/",
+        tech: [
+          <RiNextjsFill key="next" className="text-white text-2xl" />,
+          <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+          <RiNodejsLine key="node" className="text-green-500 text-2xl" />,
+        ],
+      },
+      {
+        title: "INVOICE APP",
+        description: "A streamlined invoicing tool for managing client billing, creating digital invoices, and tracking payment statuses efficiently.",
+        image: "/assets/images/invoice.png",
+        status: "Live",
+        url: "https://github.com/lwshq/invoice-fe",
+        tech: [
+          <RiNodejsLine key="node" className="text-green-500 text-2xl" />,
+          <SiExpress key="express" className="text-white text-2xl" />,
+          <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+        ],
+      },
+      {
+        title: "CALCULATOR",
+        description: "A basic yet intuitive calculator app for performing simple arithmetic operations with a modern, mobile-friendly UI.",
+        image: "/assets/images/calculator.png",
+        status: "Repo",
+        url: "https://piretz.github.io/Calculator/",
+        tech: [
+          <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+          <SiFastapi key="fastapi" className="text-teal-400 text-2xl" />,
+        ],
+        
+      },
+      
+  //     {
+  //   title: "PORTFOLIO WEBSITE",
+  //   description: "A responsive personal portfolio site built using Next.js and Tailwind CSS, showcasing projects, skills, and contact information.",
+  //   image: "/assets/images/portfolio.png",
+  //   status: "Live",
+  //   url: "https://your-portfolio-url.com",
+  //   tech: [
+  //     <RiNextjsFill key="next" className="text-white text-2xl" />,
+  //     <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+  //     <SiTypescript key="ts" className="text-blue-500 text-2xl" />,
+  //   ],
+  // },
+    ].map((project, i) => (
+      <div
+        key={i}
+        onClick={() => window.open(project.url, "_blank")}
+        className="group cursor-pointer bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl overflow-hidden shadow-md hover:shadow-[0_0_30px_#10b981] transform hover:scale-[1.03] transition duration-300"
+      >
+        <div className="relative">
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-48 object-cover rounded-lg mb-4"
+            className="w-full h-48 object-cover rounded-lg mb-4 group-hover:brightness-110 transition duration-300"
           />
-          <div className="z-10 relative">
-            <h3 className="text-2xl font-bold text-white mb-1">{project.title}</h3>
-            <p className="text-sm text-gray-300 mb-4">{project.description}</p>
-            <div className="flex items-center gap-3 mb-4">{project.tech}</div>
-            <span
-              className={`inline-block px-3 py-1 text-xs font-semibold rounded-full ${
-                project.status === "Live"
-                  ? "bg-green-500"
-                  : project.status === "Repo"
-                  ? "bg-gray-500"
-                  : "bg-yellow-600"
-              }`}
-            >
-              {project.status}
-            </span>
-          </div>
+          <div className="absolute inset-0 border border-gray-700 rounded-xl group-hover:border-green-400 transition duration-300 pointer-events-none"></div>
         </div>
-      ))}
-    </div>
-  </section>
+        <h3 className="text-2xl font-bold text-white mb-1">{project.title}</h3>
+        <p className="text-sm text-gray-300 mb-4">{project.description}</p>
+        <div className="flex items-center gap-3 mb-4 justify-center">
+          {project.tech}
+        </div>
+        <span
+          className={`inline-block px-3 py-1 text-xs font-semibold rounded-full ${
+            project.status === "Live"
+              ? "bg-green-500 text-white"
+              : project.status === "Repo"
+              ? "bg-gray-600 text-white"
+              : "bg-yellow-600 text-white"
+          }`}
+        >
+          {project.status}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
+
 
       {/* Social icons */}
       <div className="flex justify-center space-x-6 my-10">
@@ -297,3 +315,18 @@ export default function Home() {
     </div>
   );
 }
+// {/* Footer */}
+// <footer className="bg-gray-900 text-gray-400 py-6 mt-auto">
+//   <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm">
+//     <p className="mb-2 md:mb-0">
+//       &copy; {new Date().getFullYear()} Arjay Tebia. All rights reserved.
+//     </p>
+//     <div className="flex space-x-4">
+//       <Link href="#home" className="hover:text-white transition-colors duration-200">Home</Link>
+//       <Link href="#about" className="hover:text-white transition-colors duration-200">About</Link>
+//       <Link href="#technology" className="hover:text-white transition-colors duration-200">Technology</Link>
+//       <Link href="#project" className="hover:text-white transition-colors duration-200">Projects</Link>
+//       <Link href="#contact" className="hover:text-white transition-colors duration-200">Contact</Link>
+//     </div>
+//   </div>
+// </footer>
