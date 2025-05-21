@@ -10,8 +10,8 @@ import { SiExpress, SiFastapi } from "react-icons/si";
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { SiHtml5, SiLaravel, SiGit, SiTypescript, SiMysql } from "react-icons/si";
 import { FaWeight, FaFileInvoiceDollar, FaCalculator } from "react-icons/fa";
-
-
+import Image from "next/image";
+import { PiPersonSimpleBold } from "react-icons/pi";
 export default function Home() {
  const technologies = [
   {
@@ -92,16 +92,12 @@ export default function Home() {
         <p className="text-lg text-gray-200 mb-6">a Front-end Developer</p>
 
         <div className="relative w-full max-w-3xl flex justify-center">
-          {/* <img
-      src="/assets/images/arjay.png"
-      alt=""
-      className="w-64 md:w-80 drop-shadow-2xl"
-    /> */}
+          
         </div>
 
         <div className="mt-8 flex space-x-4">
           <a
-            href="/assets/docs/mark_cv.pdf"
+            href="/assets/images/CV_Tebia_Arjay Delacruz.pdf"
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded shadow"
           >
             Download CV
@@ -123,11 +119,13 @@ export default function Home() {
   <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center justify-center gap-10">
     {/* Badge Image */}
     <div className="flex justify-center items-center w-full lg:w-1/2">
-      {/* <img
-        src="/assets/images/arjay.png"
-        alt="Arjay"
-        className="w-64 md:w-80 drop-shadow-2xl"
-      /> */}
+      <Image
+  src="/assets/images/arjay.jpg"
+  alt="Arjay"
+  width={100}
+  height={320} // ✅ Add this line
+  className="w-64 md:w-80 drop-shadow-2xl"
+/>
     </div>
 
           {/* Text Content */}
@@ -156,7 +154,7 @@ export default function Home() {
         <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded shadow">
           Get a Quote
         </a>
-        <a href="/assets/docs/mark_cv.pdf" className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded shadow">
+        <a href="/assets/images/CV_Tebia_Arjay Delacruz.pdf" className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded shadow">
           View CV
               </a>
             </div>
@@ -183,105 +181,103 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="project" className="py-20 px-4 text-center bg-gray-800">
-        <h2 className="text-3xl font-semibold mb-4">Projects</h2>
-        <p className="text-lg mb-10">Here are some projects I have worked on recently.</p>
+      <section id="project" className="py-20 px-4 text-center bg-black">
+  <h2 className="text-3xl font-semibold mb-4 text-white">Projects</h2>
+  <p className="text-lg text-gray-300 mb-10">Here are some projects I have worked on recently.</p>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
-            {[
-            {
-              title: "BMI CALCULATOR",
-              description:
-              "AI-powered tool for detecting and classifying fish eye diseases using YOLO and image augmentation.",
-              image: "/assets/images/aqueyes.png",
-              status: "Private",
-              logo: <FaWeight className="text-white text-4xl mb-4" />,
-              tech: [
-              <RiNextjsFill key="next" className="text-white text-2xl" />,
-              <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
-              <RiNodejsLine key="node" className="text-green-500 text-2xl" />,
-              ],
-            },
-            {
-              title: "INVOICE APP",
-              description:
-              "An e-learning platform for Axies Education Inc. using React, Node.js, and MySQL.",
-              image: "/assets/images/learningaxies.png",
-              status: "Live",
-              logo: <FaFileInvoiceDollar className="text-white text-4xl mb-4" />,
-              tech: [
-              <RiNodejsLine key="node" className="text-green-500 text-2xl" />,
-              <SiExpress key="express" className="text-white text-2xl" />,
-              <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
-              ],
-            },
-            {
-              title: "CALCLATOR",
-              description:
-              "A streaming platform inspired by Twitch, with real-time chat and user interactions.",
-              image: "/assets/images/echo.png",
-              status: "Repo",
-              logo: <FaCalculator className="text-white text-4xl mb-4" />,
-              tech: [
-              <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
-              <SiFastapi key="fastapi" className="text-teal-400 text-2xl" />,
-              ],
-            },
-            ].map((project, i) => (
-            <div
-              key={i}
-              className="bg-gray-900 rounded-xl overflow-hidden shadow-lg text-left hover:scale-105 transition-transform duration-300"
-            >
-              <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-              <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-              <p className="text-sm text-gray-300 mb-4">{project.description}</p>
-              <div className="flex items-center gap-3 mb-4">{project.tech}</div>
-              <span
-                className={`inline-block px-3 py-1 text-xs font-semibold rounded-full ${
+    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
+      {[
+        {
+          title: "BMI CALCULATOR",
+          description: "AI-powered tool for detecting and classifying fish eye diseases using YOLO and image augmentation.",
+          image: "/assets/images/bmi.png",
+          status: "Private",
+          url: "https://your-private-link.com", // replace with actual URL or leave blank
+          tech: [
+            <RiNextjsFill key="next" className="text-white text-2xl" />,
+            <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+            <RiNodejsLine key="node" className="text-green-500 text-2xl" />,
+          ],
+        },
+        {
+          title: "INVOICE APP",
+          description: "An e-learning platform for Axies Education Inc. using React, Node.js, and MySQL.",
+          image: "/assets/images/invoice.png",
+          status: "Live",
+          url: "http://localhost:3001/login",
+          tech: [
+            <RiNodejsLine key="node" className="text-green-500 text-2xl" />,
+            <SiExpress key="express" className="text-white text-2xl" />,
+            <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+          ],
+        },
+        {
+          title: "CALCULATOR",
+          description: "A streaming platform inspired by Twitch, with real-time chat and user interactions.",
+          image: "/assets/images/calculator.png",
+          status: "Repo",
+          url: "https://your-repo-link.com",
+          tech: [
+            <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+            <SiFastapi key="fastapi" className="text-teal-400 text-2xl" />,
+          ],
+        },
+      ].map((project, i) => (
+        <div
+          key={i}
+          className="relative bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.03] hover:shadow-[0_0_30px_#10b981] transition duration-300 group"
+        >
+          <div className="absolute inset-0 border border-gray-700 rounded-xl group-hover:border-green-400 transition duration-300"></div>
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-48 object-cover rounded-lg mb-4"
+          />
+          <div className="z-10 relative">
+            <h3 className="text-2xl font-bold text-white mb-1">{project.title}</h3>
+            <p className="text-sm text-gray-300 mb-4">{project.description}</p>
+            <div className="flex items-center gap-3 mb-4">{project.tech}</div>
+            <span
+              className={`inline-block px-3 py-1 text-xs font-semibold rounded-full ${
                 project.status === "Live"
                   ? "bg-green-500"
                   : project.status === "Repo"
                   ? "bg-gray-500"
                   : "bg-yellow-600"
-                }`}
-              >
-                {project.status}
-              </span>
-              </div>
-            </div>
-            ))}
+              }`}
+            >
+              {project.status}
+            </span>
+          </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </section>
 
       {/* Social icons */}
       <div className="flex justify-center space-x-6 my-10">
         {[
           {
             icon: <FaFacebookF />,
-            url: "https://facebook.com/yourprofile",
+            url: "https://www.facebook.com/Fotlongs",
             color: "text-blue-600 hover:text-blue-800",
             label: "Facebook",
           },
           {
             icon: <FaGithub />,
-            url: "https://github.com/yourprofile",
+            url: "https://github.com/Piretz",
             color: "text-white hover:text-gray-400",
             label: "GitHub",
           },
           {
             icon: <FaLinkedinIn />,
-            url: "https://linkedin.com/in/yourprofile",
+            url: "https://www.linkedin.com/in/tebia-arjay-827056231/",
             color: "text-blue-500 hover:text-blue-700",
             label: "LinkedIn",
           },
           {
             icon: <FaInstagram />,
-            url: "https://instagram.com/yourprofile",
+            url: "https://www.instagram.com/ey_above/",
             color: "text-pink-500 hover:text-pink-700",
             label: "Instagram",
           },
