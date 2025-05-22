@@ -139,7 +139,7 @@ export default function Home() {
   {/* Badge Image */}
   <div className="flex justify-center items-center w-full lg:w-1/2">
     <Image
-      src="/assets/images/tebia.JPG"
+      src="/assets/images/tebia.jpg"
       alt="Arjay"
       width={300}
       height={300}
@@ -395,18 +395,4 @@ export default function Home() {
     </div>
   );
 }
-// {/* Footer */}
-// <footer className="bg-gray-900 text-gray-400 py-6 mt-auto">
-//   <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm">
-//     <p className="mb-2 md:mb-0">
-//       &copy; {new Date().getFullYear()} Arjay Tebia. All rights reserved.
-//     </p>
-//     <div className="flex space-x-4">
-//       <Link href="#home" className="hover:text-white transition-colors duration-200">Home</Link>
-//       <Link href="#about" className="hover:text-white transition-colors duration-200">About</Link>
-//       <Link href="#technology" className="hover:text-white transition-colors duration-200">Technology</Link>
-//       <Link href="#project" className="hover:text-white transition-colors duration-200">Projects</Link>
-//       <Link href="#contact" className="hover:text-white transition-colors duration-200">Contact</Link>
-//     </div>
-//   </div>
-// </footer>
+
