@@ -6,84 +6,39 @@ import {
   RiTailwindCssFill,
   RiNodejsLine,
 } from "react-icons/ri";
-import { SiExpress, SiFastapi } from "react-icons/si";
+import {
+  SiExpress,
+  SiFastapi,
+  SiLaravel,
+  SiGit,
+  SiTypescript,
+  SiMysql,
+  SiNpm,
+  SiPostman,
+  SiGithub,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiNextdotjs
+} from "react-icons/si";
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import { SiLaravel, SiGit, SiTypescript, SiMysql } from "react-icons/si";
-import { SiNpm, SiPostman, SiGithub } from "react-icons/si";
-import { SiHtml5, SiCss3, SiJavascript } from "react-icons/si";
-import { SiNextdotjs } from "react-icons/si";
 import Image from "next/image";
-
 export default function Home() {
-
- const technologies = [
-  {
-    name: "Next.js",
-    icon: <RiNextjsFill size={60} className="text-white " />,
-    url: "https://nextjs.org/",
-  },
-  {
-    name: "Tailwind CSS",
-    icon: <RiTailwindCssFill size={60} className="text-cyan-400" />,
-    url: "https://tailwindcss.com/",
-  },
-  {
-    name: "Node.js",
-    icon: <RiNodejsLine size={60} className="text-green-500" />,
-    url: "https://nodejs.org/",
-  },
-  {
-    name: "Express.js",
-    icon: <SiExpress size={60} className="text-white" />,
-    url: "https://expressjs.com/",
-  },
-  {
-    name: "FastAPI",
-    icon: <SiFastapi size={60} className="text-teal-400" />,
-    url: "https://fastapi.tiangolo.com/",
-  },
-  {
-    name: "HTML5",
-    icon: <SiHtml5 size={60} className="text-orange-500" />,
-    url: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
-  },
-  {
-    name: "Laravel",
-    icon: <SiLaravel size={60} className="text-red-600" />,
-    url: "https://laravel.com/",
-  },
-  {
-    name: "Git",
-    icon: <SiGit size={60} className="text-orange-500" />,
-    url: "https://git-scm.com/",
-  },
-  {
-    name: "TypeScript",
-    icon: <SiTypescript size={60} className="text-blue-500" />,
-    url: "https://www.typescriptlang.org/",
-  },
-  {
-    name: "MySQL",
-    icon: <SiMysql size={60} className="text-blue-700" />,
-    url: "https://www.mysql.com/",
-  },
-  {
-  name: "NPM",
-  icon: <SiNpm size={60} className="text-red-600" />,
-  url: "https://www.npmjs.com/",
-},
-{
-  name: "Postman",
-  icon: <SiPostman size={60} className="text-orange-500" />,
-  url: "https://www.postman.com/",
-},
-{
-  name: "GitHub",
-  icon: <SiGithub size={60} className="text-white" />,
-  url: "https://github.com/",
-},
-  
-];
+  const technologies = [
+    { name: "Next.js", icon: <RiNextjsFill size={60} className="text-white" />, url: "https://nextjs.org/" },
+    { name: "Tailwind CSS", icon: <RiTailwindCssFill size={60} className="text-cyan-400" />, url: "https://tailwindcss.com/" },
+    { name: "Node.js", icon: <RiNodejsLine size={60} className="text-green-500" />, url: "https://nodejs.org/" },
+    { name: "Express.js", icon: <SiExpress size={60} className="text-white" />, url: "https://expressjs.com/" },
+    { name: "FastAPI", icon: <SiFastapi size={60} className="text-teal-400" />, url: "https://fastapi.tiangolo.com/" },
+    { name: "HTML5", icon: <SiHtml5 size={60} className="text-orange-500" />, url: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" },
+    { name: "Laravel", icon: <SiLaravel size={60} className="text-red-600" />, url: "https://laravel.com/" },
+    { name: "Git", icon: <SiGit size={60} className="text-orange-500" />, url: "https://git-scm.com/" },
+    { name: "TypeScript", icon: <SiTypescript size={60} className="text-blue-500" />, url: "https://www.typescriptlang.org/" },
+    { name: "MySQL", icon: <SiMysql size={60} className="text-blue-700" />, url: "https://www.mysql.com/" },
+    { name: "NPM", icon: <SiNpm size={60} className="text-red-600" />, url: "https://www.npmjs.com/" },
+    { name: "Postman", icon: <SiPostman size={60} className="text-orange-500" />, url: "https://www.postman.com/" },
+    { name: "GitHub", icon: <SiGithub size={60} className="text-white" />, url: "https://github.com/" },
+  ];
 
 
   return (
