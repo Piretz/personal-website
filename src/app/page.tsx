@@ -8,15 +8,18 @@ import {
 } from "react-icons/ri";
 import { SiExpress, SiFastapi } from "react-icons/si";
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import { SiHtml5, SiLaravel, SiGit, SiTypescript, SiMysql } from "react-icons/si";
-import { FaWeight, FaFileInvoiceDollar, FaCalculator } from "react-icons/fa";
+import { SiLaravel, SiGit, SiTypescript, SiMysql } from "react-icons/si";
+import { SiNpm, SiPostman, SiGithub } from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
 import Image from "next/image";
-import { PiPersonSimpleBold } from "react-icons/pi";
+
 export default function Home() {
+
  const technologies = [
   {
     name: "Next.js",
-    icon: <RiNextjsFill size={60} className="text-white" />,
+    icon: <RiNextjsFill size={60} className="text-white " />,
     url: "https://nextjs.org/",
   },
   {
@@ -64,6 +67,22 @@ export default function Home() {
     icon: <SiMysql size={60} className="text-blue-700" />,
     url: "https://www.mysql.com/",
   },
+  {
+  name: "NPM",
+  icon: <SiNpm size={60} className="text-red-600" />,
+  url: "https://www.npmjs.com/",
+},
+{
+  name: "Postman",
+  icon: <SiPostman size={60} className="text-orange-500" />,
+  url: "https://www.postman.com/",
+},
+{
+  name: "GitHub",
+  icon: <SiGithub size={60} className="text-white" />,
+  url: "https://github.com/",
+},
+  
 ];
 
 
@@ -117,16 +136,17 @@ export default function Home() {
   className="min-h-screen px-6 bg-black text-white flex justify-center items-center"
 >
   <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center justify-center gap-10">
-    {/* Badge Image */}
-    <div className="flex justify-center items-center w-full lg:w-1/2">
-      <Image
-  src="/assets/images/arjay.jpg"
-  alt="Arjay"
-  width={100}
-  height={320} // ✅ Add this line
-  className="w-64 md:w-80 drop-shadow-2xl"
-/>
-    </div>
+  {/* Badge Image */}
+  <div className="flex justify-center items-center w-full lg:w-1/2">
+    <Image
+      src="/assets/images/tebia.JPG"
+      alt="Arjay"
+      width={300}
+      height={300}
+      className="w-40 md:w-70 drop-shadow-2xl"
+    />
+  </div>
+
 
           {/* Text Content */}
          <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
@@ -191,38 +211,41 @@ export default function Home() {
         title: "BMI CALCULATOR",
         description: "A clean and simple Body Mass Index calculator that computes BMI based on height and weight inputs. Built for quick health checks with responsive UI.",
         image: "/assets/images/bmi.png",
-        status: "Private",
+        status: "Live",
         url: "https://piretz.github.io/BmiCalculator/",
         tech: [
-          <RiNextjsFill key="next" className="text-white text-2xl" />,
-          <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
-          <RiNodejsLine key="node" className="text-green-500 text-2xl" />,
-        ],
+    <SiHtml5 key="html" className="text-orange-500 text-2xl" />,
+    <SiCss3 key="css" className="text-blue-500 text-2xl" />,
+    <SiJavascript key="js" className="text-yellow-400 text-2xl" />,
+  ],
       },
-      {
-        title: "INVOICE APP",
-        description: "A streamlined invoicing tool for managing client billing, creating digital invoices, and tracking payment statuses efficiently.",
-        image: "/assets/images/invoice.png",
-        status: "Live",
-        url: "https://github.com/lwshq/invoice-fe",
-        tech: [
-          <RiNodejsLine key="node" className="text-green-500 text-2xl" />,
-          <SiExpress key="express" className="text-white text-2xl" />,
-          <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
-        ],
-      },
-      {
-        title: "CALCULATOR",
-        description: "A basic yet intuitive calculator app for performing simple arithmetic operations with a modern, mobile-friendly UI.",
-        image: "/assets/images/calculator.png",
-        status: "Repo",
-        url: "https://piretz.github.io/Calculator/",
-        tech: [
-          <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
-          <SiFastapi key="fastapi" className="text-teal-400 text-2xl" />,
-        ],
-        
-      },
+     {
+  title: "INVOICE APP",
+  description:
+    "A streamlined invoicing tool for managing client billing, creating digital invoices, and tracking payment statuses efficiently.",
+  image: "/assets/images/invoice.png",
+  status: "Repo",
+  url: "https://github.com/lwshq/invoice-fe",
+  tech: [
+    <SiNextdotjs key="nextjs" className="text-white text-2xl" />,
+    <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+    <SiTypescript key="typescript" className="text-blue-500 text-2xl" />,
+    <SiExpress key="express" className="text-white text-2xl" />,
+  ],
+},
+     {
+  title: "TODO LIST",
+  description:
+    "A basic yet intuitive calculator app for performing simple arithmetic operations with a modern, mobile-friendly UI.",
+  image: "/assets/images/todo.jpg",
+  status: "Repo",
+  url: "https://github.com/Piretz/to-do-list",
+  tech: [
+    <SiNextdotjs key="html" className="text-orange-500 text-2xl" />,
+    <RiTailwindCssFill key="css" className="text-blue-500 text-2xl" />,
+    <SiTypescript key="js" className="text-yellow-400 text-2xl" />,
+  ],
+}
       
   //     {
   //   title: "PORTFOLIO WEBSITE",
@@ -236,6 +259,7 @@ export default function Home() {
   //     <SiTypescript key="ts" className="text-blue-500 text-2xl" />,
   //   ],
   // },
+  
     ].map((project, i) => (
       <div
         key={i}
@@ -269,6 +293,62 @@ export default function Home() {
       </div>
     ))}
   </div>
+</section>
+{/* Contact Section */}
+<section id="contact" className="py-20 px-4 text-center bg-black text-white">
+  <h2 className="text-3xl font-semibold mb-4">Let's build something together.</h2>
+  <p className="text-lg text-gray-300 mb-10">
+   Looking to hire a developer? I'm open to freelance work or professional job. Let's bring your ideas to life.
+  </p>
+
+  <form
+    action="https://formspree.io/f/mvgrgpwj" // ✅ Replace this with your actual Formspree URL
+    method="POST"
+    className="max-w-xl mx-auto space-y-6 bg-gray-900 p-8 rounded-xl shadow-lg"
+  >
+    <div className="text-left">
+      <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-300">
+        Your Name
+      </label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg shadow-inner text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+    </div>
+    <div className="text-left">
+      <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-300">
+        Your Email
+      </label>
+      <input
+        type="email"
+        id="email"
+        name="_replyto"
+        required
+        className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg shadow-inner text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+    </div>
+    <div className="text-left">
+      <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-300">
+        Your Message
+      </label>
+      <textarea
+        id="message"
+        name="message"
+        rows={5}
+        required
+        className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg shadow-inner text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+      ></textarea>
+    </div>
+    <button
+      type="submit"
+      className="w-full bg-blue-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg shadow transition duration-300"
+    >
+      Send Message
+    </button>
+  </form>
 </section>
 
 
