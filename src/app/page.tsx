@@ -96,7 +96,7 @@ export default function Home() {
   {/* Badge Image */}
   <div className="flex justify-center items-center w-full lg:w-1/2">
     <Image
-      src="/assets/images/Tebia.jpg"
+      src="/assets/images/Tebia.JPG"
       alt="Arjay"
       width={400}
       height={200}
