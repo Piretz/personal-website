@@ -97,7 +97,7 @@ export default function Home() {
   <div className="flex justify-center items-center w-full lg:w-1/2">
     <Image
       src="/assets/images/tebia.jpg"
-      alt="Arjay Tebia"
+      alt="tebia"
       width={400}
       height={200}
       className="w-40 md:w-70 drop-shadow-2xl"
