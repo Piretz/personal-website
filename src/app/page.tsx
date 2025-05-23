@@ -42,11 +42,13 @@ export default function Home() {
 
 
   return (
+
+
     <div className="min-h-screen bg-black text-white flex flex-col">
       {/* Navbar */}
       <nav className="w-full bg-gray-900 p-4 shadow-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold text-gray-600">Tebia</div>
+          <div className="text-2xl font-bold text-white">TEBIA</div>
           <div className="flex space-x-6 text-lg">
             <Link href="#home" className="hover:text-green-600 transition-colors duration-200">Home</Link>
             <Link href="#about" className="hover:text-green-600 transition-colors duration-200">About</Link>
