@@ -107,7 +107,7 @@ export default function Home() {
           {/* Text Content */}
          <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
       <h2 className="text-4xl font-bold text-white">
-        Hi, I'm Arjay, Nice to Meet You!
+        Hi, I&apos;m Arjay, Nice to Meet You!
       </h2>
       <p className="text-lg text-gray-300">
        I&apos;m a curious and driven developer who loves turning ideas into real, working products.
@@ -156,8 +156,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Section */}
-     <section id="project" className="py-20 px-4 text-center bg-black">
+   {/* Projects Section */}
+<section id="project" className="py-20 px-4 text-center bg-black">
   <h2 className="text-3xl font-semibold mb-4 text-white">Projects</h2>
   <p className="text-lg text-gray-300 mb-10">Here are some projects I have worked on recently.</p>
 
@@ -170,39 +170,36 @@ export default function Home() {
         status: "Live",
         url: "https://piretz.github.io/BmiCalculator/",
         tech: [
-    <SiHtml5 key="html" className="text-orange-500 text-2xl" />,
-    <SiCss3 key="css" className="text-blue-500 text-2xl" />,
-    <SiJavascript key="js" className="text-yellow-400 text-2xl" />,
-  ],
+          <SiHtml5 key="html" className="text-orange-500 text-2xl" />,
+          <SiCss3 key="css" className="text-blue-500 text-2xl" />,
+          <SiJavascript key="js" className="text-yellow-400 text-2xl" />,
+        ],
       },
-     {
-  title: "INVOICE APP",
-  description:
-    "A streamlined invoicing tool for managing client billing, creating digital invoices, and tracking payment statuses efficiently.",
-  image: "/assets/images/invoice.png",
-  status: "Repo",
-  url: "https://github.com/lwshq/invoice-fe",
-  tech: [
-    <SiNextdotjs key="nextjs" className="text-white text-2xl" />,
-    <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
-    <SiTypescript key="typescript" className="text-blue-500 text-2xl" />,
-    <SiExpress key="express" className="text-white text-2xl" />,
-  ],
-},
-     {
-  title: "TODO LIST",
-  description:
-    "A to-do list is a tool for organizing tasks. It helps you keep track of what needs to be done, set priorities, and mark tasks as completed. It's useful for staying focused and managing time effectively.",
-  image: "/assets/images/todo.jpg",
-  status: "Repo",
-  url: "https://github.com/Piretz/to-do-list",
-  tech: [
-    <SiNextdotjs key="html" className="text-orange-500 text-2xl" />,
-    <RiTailwindCssFill key="css" className="text-blue-500 text-2xl" />,
-    <SiTypescript key="js" className="text-yellow-400 text-2xl" />,
-  ],
-}
-  
+      {
+        title: "INVOICE APP",
+        description: "A streamlined invoicing tool for managing client billing, creating digital invoices, and tracking payment statuses efficiently.",
+        image: "/assets/images/invoice.png",
+        status: "Repo",
+        url: "https://github.com/lwshq/invoice-fe",
+        tech: [
+          <SiNextdotjs key="nextjs" className="text-white text-2xl" />,
+          <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+          <SiTypescript key="typescript" className="text-blue-500 text-2xl" />,
+          <SiExpress key="express" className="text-white text-2xl" />,
+        ],
+      },
+      {
+        title: "TODO LIST",
+        description: "A to-do list is a tool for organizing tasks. It helps you keep track of what needs to be done, set priorities, and mark tasks as completed.",
+        image: "/assets/images/todo.jpg",
+        status: "Repo",
+        url: "https://github.com/Piretz/to-do-list",
+        tech: [
+          <SiNextdotjs key="next" className="text-white text-2xl" />,
+          <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+          <SiTypescript key="ts" className="text-blue-500 text-2xl" />,
+        ],
+      },
     ].map((project, i) => (
       <div
         key={i}
