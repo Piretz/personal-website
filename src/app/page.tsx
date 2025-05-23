@@ -39,11 +39,7 @@ export default function Home() {
     { name: "Postman", icon: <SiPostman size={60} className="text-orange-500" />, url: "https://www.postman.com/" },
     { name: "GitHub", icon: <SiGithub size={60} className="text-white" />, url: "https://github.com/" },
   ];
-
-
   return (
-
-
     <div className="min-h-screen bg-black text-white flex flex-col">
       {/* Navbar */}
       <nav className="w-full bg-gray-900 p-4 shadow-md sticky top-0 z-50">
@@ -58,7 +54,6 @@ export default function Home() {
           </div>
         </div>
       </nav>
-
       {/* Home Section */}
       <section
         id="home"
@@ -66,11 +61,8 @@ export default function Home() {
       >
         <h1 className="text-4xl md:text-5xl font-bold mb-2">Hi, I&apos;m<span className="text-black bg-white px-2 rounded">Arjay, Nice to Meet You!</span></h1>
         <p className="text-lg text-gray-200 mb-6">a Front-end Developer</p>
-
         <div className="relative w-full max-w-3xl flex justify-center">
-          
         </div>
-
         <div className="mt-8 flex space-x-4">
           <a
             href="/assets/images/CV_Tebia_Arjay_Delacruz.pdf"
@@ -98,13 +90,11 @@ export default function Home() {
     <Image
       src="/assets/images/Tebia.jpg"
       alt="Arjay"
-      width={300}
-      height={300}
+      width={400}
+      height={200}
       className="w-40 md:w-70 drop-shadow-2xl"
     />
   </div>
-
-
           {/* Text Content */}
          <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
       <h2 className="text-4xl font-bold text-white">
@@ -119,7 +109,7 @@ export default function Home() {
          I&apos;m Arjay Tebia, 23 years old, from Quezon City...
         </p>
         <p className="text-gray-300">
-         I&apos;m a Front-end developer...
+         I&apos;m a developer
         </p>
         <p className="text-gray-300">
          I&apos;m always eager to explore new tech...
@@ -193,7 +183,7 @@ export default function Home() {
      {
   title: "TODO LIST",
   description:
-    "A basic yet intuitive calculator app for performing simple arithmetic operations with a modern, mobile-friendly UI.",
+    "A to-do list is a tool for organizing tasks. It helps you keep track of what needs to be done, set priorities, and mark tasks as completed. It's useful for staying focused and managing time effectively.",
   image: "/assets/images/todo.jpg",
   status: "Repo",
   url: "https://github.com/Piretz/to-do-list",
