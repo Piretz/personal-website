@@ -73,7 +73,7 @@ export default function Home() {
 
         <div className="mt-8 flex space-x-4">
           <a
-            href="/assets/images/CV_Tebia_Arjay Delacruz.pdf"
+            href="/assets/images/CV_Tebia_Arjay_Delacruz.pdf"
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded shadow"
           >
             Download CV
@@ -96,7 +96,7 @@ export default function Home() {
   {/* Badge Image */}
   <div className="flex justify-center items-center w-full lg:w-1/2">
     <Image
-      src="/assets/images/tebia.jpg"
+      src="/assets/images/Tebia.jpg"
       alt="Arjay"
       width={300}
       height={300}
@@ -131,7 +131,7 @@ export default function Home() {
         <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded shadow">
           Get a Quote
         </a>
-        <a href="/assets/images/CV_Tebia_Arjay Delacruz.pdf" className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded shadow">
+        <a href="/assets/images/CV_Tebia_Arjay_Delacruz.pdf" className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded shadow">
           View CV
               </a>
             </div>
