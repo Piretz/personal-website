@@ -1,8 +1,6 @@
 'use client';
-
 import Link from "next/link";
 import Image from "next/image";
-
 // Used icons only
 import {
   RiNextjsFill,
@@ -109,20 +107,16 @@ export default function Home() {
       <h2 className="text-4xl font-bold text-white">
         Hi, I&apos;m Arjay, Nice to Meet You!
       </h2>
-      <p className="text-lg text-gray-300">
-       I&apos;m a curious and driven developer who loves turning ideas into real, working products.
-  Whether I&apos;m building apps, solving problems, or learning something new, I&apos;m all in.
-      </p>
+      <p className="text-lg text-gray-300">I&apos;m a curious and driven developer who loves turning ideas into real, working products.
+  Whether I&apos;m building apps, solving problems, or learning something new, I&apos;m all in.      </p>
+
       <div className="space-y-4">
-        <p className="text-gray-300">
-         I&apos;m Arjay Tebia, 23 years old, from Quezon City...
-        </p>
-        <p className="text-gray-300">
-         I&apos;m a developer
-        </p>
-        <p className="text-gray-300">
-         I&apos;m always eager to explore new tech...
-        </p>
+        <p className="text-gray-300">  I&apos;m Arjay Tebia, 23 years old, from Quezon City...
+       
+    I&apos;m Arjay Tebia, 23 years old, from Quezon City...</p>
+        <p className="text-gray-300"> I&apos;m a developer   </p>
+        <p className="text-gray-300"> I&apos;m always eager to explore new tech...   </p>
+    
       </div>
       
 
@@ -166,7 +160,7 @@ export default function Home() {
       {
         title: "BMI CALCULATOR",
         description: "A clean and simple Body Mass Index calculator that computes BMI based on height and weight inputs. Built for quick health checks with responsive UI.",
-        image: "/assets/images/bmi.png",
+        Image: "/assets/images/bmi.png",
         status: "Live",
         url: "https://piretz.github.io/BmiCalculator/",
         tech: [
@@ -178,7 +172,7 @@ export default function Home() {
       {
         title: "INVOICE APP",
         description: "A streamlined invoicing tool for managing client billing, creating digital invoices, and tracking payment statuses efficiently.",
-        image: "/assets/images/invoice.png",
+        Image: "/assets/images/invoice.png",
         status: "Repo",
         url: "https://github.com/lwshq/invoice-fe",
         tech: [
@@ -191,7 +185,7 @@ export default function Home() {
       {
         title: "TODO LIST",
         description: "A to-do list is a tool for organizing tasks. It helps you keep track of what needs to be done, set priorities, and mark tasks as completed.",
-        image: "/assets/images/todo.jpg",
+        Image: "/assets/images/todo.jpg",
         status: "Repo",
         url: "https://github.com/Piretz/to-do-list",
         tech: [
@@ -208,7 +202,7 @@ export default function Home() {
       >
         <div className="relative">
           <img
-            src={project.image}
+            src={project.Image}
             alt={project.title}
             className="w-full h-48 object-cover rounded-lg mb-4 group-hover:brightness-110 transition duration-300"
           />
@@ -236,10 +230,8 @@ export default function Home() {
 </section>
 {/* Contact Section */}
 <section id="contact" className="py-20 px-4 text-center bg-black text-white">
-  <h2 className="text-3xl font-semibold mb-4">Let's build something together.</h2>
-  <p className="text-lg text-gray-300 mb-10">
- Looking to hire a developer? I&apos;m open to freelance work or professional job. Let&apos;s bring your ideas to life.
-  </p>
+  <h2 className="text-3xl font-semibold mb-4">Let&apos;s build something together.</h2>
+  <p className="text-lg text-gray-300 mb-10"> Looking to hire a developer? I&apos;m open to freelance work or professional job. Let&apos;s bring your ideas to life.  </p>
 
   <form
     action="https://formspree.io/f/mvgrgpwj" // ✅ Replace this with your actual Formspree URL
