@@ -64,7 +64,7 @@ export default function Home() {
         id="home"
         className="py-20 px-4 text-white bg-[url('/assets/images/grid-bg.svg')] bg-cover bg-center flex flex-col items-center text-center"
       >
-        <h1 className="text-4xl md:text-5xl font-bold mb-2">Hello, I am <span className="text-black bg-white px-2 rounded">Arjay Tebia</span></h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-2">Hi, I&apos;m<span className="text-black bg-white px-2 rounded">Arjay, Nice to Meet You!</span></h1>
         <p className="text-lg text-gray-200 mb-6">a Front-end Developer</p>
 
         <div className="relative w-full max-w-3xl flex justify-center">
@@ -111,18 +111,18 @@ export default function Home() {
         Hi, I'm Arjay, Nice to Meet You!
       </h2>
       <p className="text-lg text-gray-300">
-        I'm a curious and driven developer who loves turning ideas into real, working products.
-        Whether I'm building apps, solving problems, or learning something new, I'm all in.
+       I&apos;m a curious and driven developer who loves turning ideas into real, working products.
+  Whether I&apos;m building apps, solving problems, or learning something new, I&apos;m all in.
       </p>
       <div className="space-y-4">
         <p className="text-gray-300">
-          I'm Arjay Tebia, 23 years old, from Quezon City...
+         I&apos;m Arjay Tebia, 23 years old, from Quezon City...
         </p>
         <p className="text-gray-300">
-          I'm a Front-end developer...
+         I&apos;m a Front-end developer...
         </p>
         <p className="text-gray-300">
-          I'm always eager to explore new tech...
+         I&apos;m always eager to explore new tech...
         </p>
       </div>
       
@@ -255,7 +255,7 @@ export default function Home() {
 <section id="contact" className="py-20 px-4 text-center bg-black text-white">
   <h2 className="text-3xl font-semibold mb-4">Let's build something together.</h2>
   <p className="text-lg text-gray-300 mb-10">
-   Looking to hire a developer? I'm open to freelance work or professional job. Let's bring your ideas to life.
+ Looking to hire a developer? I&apos;m open to freelance work or professional job. Let&apos;s bring your ideas to life.
   </p>
 
   <form
