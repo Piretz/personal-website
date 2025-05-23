@@ -1,6 +1,9 @@
 'use client';
 
 import Link from "next/link";
+import Image from "next/image";
+
+// Used icons only
 import {
   RiNextjsFill,
   RiTailwindCssFill,
@@ -21,8 +24,13 @@ import {
   SiJavascript,
   SiNextdotjs
 } from "react-icons/si";
-import { FaFacebookF, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import Image from "next/image";
+import {
+  FaFacebookF,
+  FaGithub,
+  FaLinkedinIn,
+  FaInstagram
+} from "react-icons/fa";
+
 export default function Home() {
   const technologies = [
     { name: "Next.js", icon: <RiNextjsFill size={60} className="text-white" />, url: "https://nextjs.org/" },
@@ -39,6 +47,7 @@ export default function Home() {
     { name: "Postman", icon: <SiPostman size={60} className="text-orange-500" />, url: "https://www.postman.com/" },
     { name: "GitHub", icon: <SiGithub size={60} className="text-white" />, url: "https://github.com/" },
   ];
+
   return (
     <div className="min-h-screen bg-black text-white flex flex-col">
       {/* Navbar */}
@@ -193,19 +202,6 @@ export default function Home() {
     <SiTypescript key="js" className="text-yellow-400 text-2xl" />,
   ],
 }
-      
-  //     {
-  //   title: "PORTFOLIO WEBSITE",
-  //   description: "A responsive personal portfolio site built using Next.js and Tailwind CSS, showcasing projects, skills, and contact information.",
-  //   image: "/assets/images/portfolio.png",
-  //   status: "Live",
-  //   url: "https://your-portfolio-url.com",
-  //   tech: [
-  //     <RiNextjsFill key="next" className="text-white text-2xl" />,
-  //     <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
-  //     <SiTypescript key="ts" className="text-blue-500 text-2xl" />,
-  //   ],
-  // },
   
     ].map((project, i) => (
       <div
