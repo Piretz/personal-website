@@ -1,6 +1,7 @@
 'use client';
 import Link from "next/link";
 import Image from "next/image";
+
 // Used icons only
 import {
   RiNextjsFill,
@@ -66,7 +67,7 @@ export default function Home() {
         id="home"
         className="py-20 px-4 text-white bg-[url('/assets/images/grid-bg.svg')] bg-cover bg-center flex flex-col items-center text-center"
       >
-        <h1 className="text-4xl md:text-5xl font-bold mb-2">Hi, I&apos;m<span className="text-black bg-white px-2 rounded">Arjay, Nice to Meet You!</span></h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-2">Hi, I am<span className="text-black bg-white px-2 rounded">Arjay, Nice to Meet You!</span></h1>
         <p className="text-lg text-gray-200 mb-6">a Front-end Developer</p>
         <div className="relative w-full max-w-3xl flex justify-center">
         </div>
@@ -107,11 +108,11 @@ export default function Home() {
       <h2 className="text-4xl font-bold text-white">
         Hi, I&apos;m Arjay, Nice to Meet You!
       </h2>
-      <p className="text-lg text-gray-300">I&apos;m a curious and driven developer who loves turning ideas into real, working products.
+      <p className="text-lg text-gray-300">I am a curious and driven developer who loves turning ideas into real, working products.
   Whether I&apos;m building apps, solving problems, or learning something new, I&apos;m all in.      </p>
 
       <div className="space-y-4">
-        <p className="text-gray-300">  I&apos;m Arjay Tebia, 23 years old, from Quezon City...
+        <p className="text-gray-300">  I am Arjay Tebia, 23 years old, from Quezon City...
        
     I&apos;m Arjay Tebia, 23 years old, from Quezon City...</p>
         <p className="text-gray-300"> I&apos;m a developer   </p>
