@@ -4,8 +4,6 @@ import Image from "next/image";
 import Navbar from "./components/ui/navbar";
 import Footer from "./components/ui/footer";
 
-
-
 // Used icons only
 import {
   RiNextjsFill,
@@ -76,7 +74,7 @@ export default function Home() {
           <a
             href="#project"
             className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded shadow flex items-center space-x-2"
-          >
+          >22
             <span>View Projects</span>
             <span className="text-sm">🔍</span>
           </a>
@@ -89,7 +87,7 @@ export default function Home() {
 >
   <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center justify-center gap-10">
  <div className="flex justify-center items-center w-full lg:w-1/2">
-   <Image src="/assets/images/invoice.png" 
+   <Image src="/assets/images/arjay.png" 
    width={300} 
    height={200} 
    alt="tebia"
