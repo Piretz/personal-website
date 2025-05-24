@@ -88,7 +88,9 @@ export default function Home() {
 >
   <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center justify-center gap-10">
  <div className="flex justify-center items-center w-full lg:w-1/2">
+  
    <Image src="/assets/images/tebia.jpg" width={300} height={200} alt="tebia"
+
     className="w-40 md:w-70 drop-shadow-2xl"
   />
 </div>
