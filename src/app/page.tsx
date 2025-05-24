@@ -87,16 +87,11 @@ export default function Home() {
   className="min-h-screen px-6 bg-black text-white flex justify-center items-center"
 >
   <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center justify-center gap-10">
-
-  <div className="flex justify-center items-center w-full lg:w-1/2">
-    {<Image
-      src="/assets/images/tebia.jpg"
-      alt="tebia"
-      width={400}
-      height={200}  
-      className="w-40 md:w-70 drop-shadow-2xl"
-    />}
-  </div>
+ <div className="flex justify-center items-center w-full lg:w-1/2">
+   <Image src="/assets/images/tebia.jpg" width={300} height={200} alt="tebia"
+    className="w-40 md:w-70 drop-shadow-2xl"
+  />
+</div>
           {/* Text Content */}
          <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
       <h2 className="text-4xl font-bold text-white">
@@ -114,7 +109,6 @@ export default function Home() {
     
       </div>
       
-
             <div className="flex justify-center lg:justify-start space-x-4 mt-6">
         <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded shadow">
           Get a Quote
@@ -132,14 +126,16 @@ export default function Home() {
         <h2 className="text-3xl font-semibold mb-4">Technologies</h2>
         <p className="text-lg mb-8">I work with Next.js, Tailwind CSS, React, Node.js, and more.</p>
         <div className="flex flex-wrap justify-center gap-10">
-          {technologies.map((tech) => (
-            <div
-              key={tech.name}
-              onClick={() => window.open(tech.url, "_blank")}
-              className="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center w-40 transform transition-transform duration-300 hover:scale-105 cursor-pointer"
-            >
-              <div className="mb-4">{tech.icon}</div>
-              <span className="text-white text-lg">{tech.name}</span>
+    {technologies.map((tech) => (
+        <div
+          key={tech.name}
+          onClick={() => window.open(tech.url, "_blank")}
+          className="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center w-40 transform transition-transform duration-300 hover:scale-105 cursor-pointer group"
+        >
+          <div className="mb-4 transform transition-transform duration-300 group-hover:scale-125">
+            {tech.icon}
+          </div>
+          <span className="text-white text-lg">{tech.name}</span>
             </div>
           ))}
         </div>

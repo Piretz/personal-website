@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className="w-full bg-gray-950/70 backdrop-blur-md p-4 shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-3xl font-extrabold bg-gradient-to-r from-green-400 via-blue-400 to-purple-500 bg-clip-text text-transparent">
+        <div className="text-3xl font-extrabold  text-white ">
           TEBIA
         </div>
 
