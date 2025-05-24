@@ -5,6 +5,7 @@ import Navbar from "./components/ui/navbar";
 import Footer from "./components/ui/footer";
 
 
+
 // Used icons only
 import {
   RiNextjsFill,
@@ -88,10 +89,11 @@ export default function Home() {
 >
   <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center justify-center gap-10">
  <div className="flex justify-center items-center w-full lg:w-1/2">
-  
-   <Image src="/assets/images/tebia.jpg" width={300} height={200} alt="tebia"
-
-    className="w-40 md:w-70 drop-shadow-2xl"
+   <Image src="/assets/images/invoice.png" 
+   width={300} 
+   height={200} 
+   alt="tebia"
+  className="w-40 md:w-70 drop-shadow-2xl"
   />
 </div>
           {/* Text Content */}
@@ -195,7 +197,7 @@ export default function Home() {
       >
         <div className="relative">
           <img
-            src={project.Image}
+            src={project.Image} 
             alt={project.title}
             className="w-full h-48 object-cover rounded-lg mb-4 group-hover:brightness-110 transition duration-300"
           />
