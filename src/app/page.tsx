@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Navbar from "./components/ui/navbar";
 import Footer from "./components/ui/footer";
-
+import ChatBot from "./components/ui/chatbot";
 // Used icons only
 import {
   RiNextjsFill,
@@ -74,7 +74,7 @@ export default function Home() {
           <a
             href="#project"
             className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded shadow flex items-center space-x-2"
-          >22
+          >
             <span>View Projects</span>
             <span className="text-sm">🔍</span>
           </a>
@@ -99,18 +99,24 @@ export default function Home() {
       <h2 className="text-4xl font-bold text-white">
         Hi, I&apos;m Arjay, a Frontend Developer!
       </h2>
-      <p className="text-lg text-gray-300">I am a curious and driven developer who loves turning ideas into real, working products.
-  Whether I&apos;m building apps, solving problems, or learning something new, I&apos;m all in.      </p>
+      <p className="text-lg text-gray-300">
+        I’m a curious and driven developer passionate about turning ideas into real, functional products. Whether I’m building apps, solving challenges, or diving into new technologies, I give it my all. </p>
 
       <div className="space-y-4">
-        <p className="text-gray-300">  I am Arjay Tebia, 23 years old, from Quezon City...
+        <p className="text-gray-300">My name is Arjay Tebia, a 23-year-old developer based in Quezon City.
        
     I&apos;m Arjay Tebia, 23 years old, from Quezon City...</p>
         <p className="text-gray-300"> I&apos;m a developer   </p>
-        <p className="text-gray-300"> I&apos;m always eager to explore new tech...   </p>
+        <p className="text-gray-300">I’m always eager to explore new tools, frameworks, and innovations in tech. </p>
     
       </div>
-      
+      <div>
+     
+
+
+
+I’m always eager to explore new tools, frameworks, and innovations in tech.
+      </div>
             <div className="flex justify-center lg:justify-start space-x-4 mt-6">
         <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded shadow">
           Get a Quote
@@ -320,6 +326,7 @@ export default function Home() {
       </div>
       <div></div>
        <Footer />
+       <ChatBot />
     </div>
     
     
