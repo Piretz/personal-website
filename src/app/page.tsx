@@ -1,6 +1,9 @@
 'use client';
 import Link from "next/link";
 import Image from "next/image";
+import Navbar from "./components/ui/navbar";
+import Footer from "./components/ui/footer";
+
 
 // Used icons only
 import {
@@ -47,21 +50,12 @@ export default function Home() {
     { name: "GitHub", icon: <SiGithub size={60} className="text-white" />, url: "https://github.com/" },
   ];
 
+
   return (
     <div className="min-h-screen bg-black text-white flex flex-col">
       {/* Navbar */}
-      <nav className="w-full bg-gray-900 p-4 shadow-md sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold text-white">TEBIA</div>
-          <div className="flex space-x-6 text-lg">
-            <Link href="#home" className="hover:text-green-600 transition-colors duration-200">Home</Link>
-            <Link href="#about" className="hover:text-green-600 transition-colors duration-200">About</Link>
-            <Link href="#technology" className="hover:text-green-600 transition-colors duration-200">Technology</Link>
-            <Link href="#project" className="hover:text-green-600 transition-colors duration-200">Project</Link>
-            <Link href="#contact" className="hover:text-green-600 transition-colors duration-200">Contact</Link>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
+     
       {/* Home Section */}
       <section
         id="home"
@@ -95,18 +89,18 @@ export default function Home() {
   <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center justify-center gap-10">
   {/* Badge Image */}
   <div className="flex justify-center items-center w-full lg:w-1/2">
-    <Image
+    {<Image
       src="/assets/images/tebia.jpg"
       alt="tebia"
       width={400}
       height={200}
       className="w-40 md:w-70 drop-shadow-2xl"
-    />
+    />}
   </div>
           {/* Text Content */}
          <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
       <h2 className="text-4xl font-bold text-white">
-        Hi, I&apos;m Arjay, Nice to Meet You!
+        Hi, I&apos;m Arjay, a Frontend Developer!
       </h2>
       <p className="text-lg text-gray-300">I am a curious and driven developer who loves turning ideas into real, working products.
   Whether I&apos;m building apps, solving problems, or learning something new, I&apos;m all in.      </p>
@@ -324,8 +318,13 @@ export default function Home() {
             <span className="text-xl">{item.icon}</span>
           </a>
         ))}
+        
       </div>
+      <div></div>
+       <Footer />
     </div>
+    
+    
   );
 }
 
