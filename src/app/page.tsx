@@ -1,5 +1,5 @@
 'use client';
-import Link from "next/link";
+
 import Image from "next/image";
 import Navbar from "./components/ui/navbar";
 import Footer from "./components/ui/footer";
@@ -55,7 +55,7 @@ export default function Home() {
     <div className="min-h-screen bg-black text-white flex flex-col">
       {/* Navbar */}
       <Navbar />
-     
+
       {/* Home Section */}
       <section
         id="home"
@@ -87,13 +87,13 @@ export default function Home() {
   className="min-h-screen px-6 bg-black text-white flex justify-center items-center"
 >
   <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center justify-center gap-10">
-  {/* Badge Image */}
+
   <div className="flex justify-center items-center w-full lg:w-1/2">
     {<Image
       src="/assets/images/tebia.jpg"
       alt="tebia"
       width={400}
-      height={200}
+      height={200}  
       className="w-40 md:w-70 drop-shadow-2xl"
     />}
   </div>
