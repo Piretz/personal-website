@@ -234,8 +234,8 @@ I am always eager to explore new tools, frameworks, and innovations in tech.
         title: "TODO LIST",
         description: "A to-do list is a tool for organizing tasks. It helps you keep track of what needs to be done, set priorities, and mark tasks as completed.",
         Image: "/assets/images/todo.jpg",
-        status: "Repo",
-        url: "https://github.com/Piretz/to-do-list",
+        status: "Live",
+        url: "https://to-do-project-nine-amber.vercel.app/",
         tech: [
           <SiNextdotjs key="next" className="text-white text-2xl" />,
           <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
