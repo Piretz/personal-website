@@ -280,7 +280,7 @@ I am always eager to explore new tools, frameworks, and innovations in tech.
 </section>
 {/* Contact Section */}
 <section id="contact" className="py-20 px-4 text-center bg-black text-white">
- <h2 className="text-4xl font-extrabold mb-8 relative inline-block text-white after:block after:mt-2 after:h-1 after:w-100 after:bg-gradient-to-r after:from-yellow-400 after:via-red-500 after:to-pink-500 after:mx-auto">
+ <h2 className="text-4xl font-extrabold mb-8 relative inline-block text-white after:block after:mt-2 after:h-1 after:w-70 after:bg-gradient-to-r after:from-yellow-400 after:via-red-500 after:to-pink-500 after:mx-auto">
   Let’s Build Something Together
 </h2>
 
