@@ -224,7 +224,7 @@ I am always eager to explore new tools, frameworks, and innovations in tech.
         description: "i created this personal website to showcase my skills, projects, and experiences as a developer. It serves as a portfolio and a platform to connect with others.",
         Image: "/assets/images/website.jpg",
         status: "Repo",
-        url: "https://personal-website-three-neon-91.vercel.app/",
+        url: "https://arjay-tebia.vercel.app/",
         tech: [
           <SiNextdotjs key="nextjs" className="text-white text-2xl" />,
           <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
