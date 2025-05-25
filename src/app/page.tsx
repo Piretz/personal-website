@@ -1,5 +1,6 @@
 'use client';
 
+
 import Image from "next/image";
 import Navbar from "./components/ui/navbar";
 import Footer from "./components/ui/footer";
@@ -23,7 +24,10 @@ import {
   SiHtml5,
   SiCss3,
   SiJavascript,
-  SiNextdotjs
+  SiNextdotjs,
+
+  SiVercel,
+  SiNetlify
 } from "react-icons/si";
 import {
   FaFacebookF,
@@ -32,22 +36,30 @@ import {
   FaInstagram
 } from "react-icons/fa";
 
+
+
 export default function Home() {
-  const technologies = [
-    { name: "Next.js", icon: <RiNextjsFill size={60} className="text-white" />, url: "https://nextjs.org/" },
-    { name: "Tailwind CSS", icon: <RiTailwindCssFill size={60} className="text-cyan-400" />, url: "https://tailwindcss.com/" },
-    { name: "Node.js", icon: <RiNodejsLine size={60} className="text-green-500" />, url: "https://nodejs.org/" },
-    { name: "Express.js", icon: <SiExpress size={60} className="text-white" />, url: "https://expressjs.com/" },
-    { name: "FastAPI", icon: <SiFastapi size={60} className="text-teal-400" />, url: "https://fastapi.tiangolo.com/" },
-    { name: "HTML5", icon: <SiHtml5 size={60} className="text-orange-500" />, url: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" },
-    { name: "Laravel", icon: <SiLaravel size={60} className="text-red-600" />, url: "https://laravel.com/" },
-    { name: "Git", icon: <SiGit size={60} className="text-orange-500" />, url: "https://git-scm.com/" },
-    { name: "TypeScript", icon: <SiTypescript size={60} className="text-blue-500" />, url: "https://www.typescriptlang.org/" },
-    { name: "MySQL", icon: <SiMysql size={60} className="text-blue-700" />, url: "https://www.mysql.com/" },
-    { name: "NPM", icon: <SiNpm size={60} className="text-red-600" />, url: "https://www.npmjs.com/" },
-    { name: "Postman", icon: <SiPostman size={60} className="text-orange-500" />, url: "https://www.postman.com/" },
-    { name: "GitHub", icon: <SiGithub size={60} className="text-white" />, url: "https://github.com/" },
-  ];
+const technologies = [
+  { name: "Next.js", icon: <RiNextjsFill size={60} className="text-white" />, url: "https://nextjs.org/" },
+  { name: "Tailwind CSS", icon: <RiTailwindCssFill size={60} className="text-cyan-400" />, url: "https://tailwindcss.com/" },
+  { name: "Node.js", icon: <RiNodejsLine size={60} className="text-teal-400" />, url: "https://nodejs.org/" },
+  { name: "Express.js", icon: <SiExpress size={60} className="text-white" />, url: "https://expressjs.com/" },
+  { name: "FastAPI", icon: <SiFastapi size={60} className="text-teal-400" />, url: "https://fastapi.tiangolo.com/" },
+  { name: "HTML5", icon: <SiHtml5 size={60} className="text-cyan-400" />, url: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" },
+  { name: "Laravel", icon: <SiLaravel size={60} className="text-red-500" />, url: "https://laravel.com/" },
+  { name: "TypeScript", icon: <SiTypescript size={60} className="text-blue-500" />, url: "https://www.typescriptlang.org/" },
+  { name: "MySQL", icon: <SiMysql size={60} className="text-blue-500" />, url: "https://www.mysql.com/" },
+  { name: "NPM", icon: <SiNpm size={60} className="text-red-500" />, url: "https://www.npmjs.com/" },
+];
+
+
+const tools = [
+  { name: "Postman", icon: <SiPostman size={60} className="text-orange-400" />, url: "https://www.postman.com/" },
+  { name: "GitHub", icon: <SiGithub size={60} className="text-white" />, url: "https://github.com/" },
+  { name: "Vercel", icon: <SiVercel size={60} className="text-white" />, url: "https://vercel.com/" },
+  { name: "Netlify", icon: <SiNetlify size={60} className="text-teal-400" />, url: "https://www.netlify.com/" },
+];
+
 
 
   return (
@@ -96,9 +108,10 @@ export default function Home() {
 </div>
           {/* Text Content */}
          <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
-      <h2 className="text-4xl font-bold text-white">
-        Hi, I&apos;m Arjay, a Frontend Developer!
-      </h2>
+      <h2 className="text-4xl font-bold text-white animate-fade-in">
+  Hi, I'm Arjay, a Frontend Developer!
+</h2>
+
       <p className="text-lg text-gray-300">
         I’m a curious and driven developer passionate about turning ideas into real, functional products. Whether I’m building apps, solving challenges, or diving into new technologies, I give it my all. </p>
 
@@ -107,7 +120,7 @@ export default function Home() {
        
     I&apos;m Arjay Tebia, 23 years old, from Quezon City...</p>
         <p className="text-gray-300"> I&apos;m a developer   </p>
-        <p className="text-gray-300">I’m always eager to explore new tools, frameworks, and innovations in tech. </p>
+       
     
       </div>
       <div>
@@ -131,8 +144,11 @@ I’m always eager to explore new tools, frameworks, and innovations in tech.
 
       {/* Technologies Section */}
       <section id="technology" className="py-20 px-4 text-center">
-        <h2 className="text-3xl font-semibold mb-4">Technologies</h2>
-        <p className="text-lg mb-8">I work with Next.js, Tailwind CSS, React, Node.js, and more.</p>
+    <h2 className="text-4xl font-extrabold mb-8 relative inline-block text-white after:block after:mt-2 after:h-1 after:w-70 after:bg-gradient-to-r after:from-yellow-400 after:via-red-500 after:to-pink-500 after:mx-auto">
+  Technologies
+</h2>
+
+       
         <div className="flex flex-wrap justify-center gap-10">
     {technologies.map((tech) => (
         <div
@@ -148,11 +164,38 @@ I’m always eager to explore new tools, frameworks, and innovations in tech.
           ))}
         </div>
       </section>
+      <section id="tools" className="py-20 px-4 text-center">
+<h2 className="text-4xl font-extrabold mb-8 relative inline-block text-white after:block after:mt-2 after:h-1 after:w-40 after:bg-gradient-to-r after:from-yellow-400 after:via-red-500 after:to-pink-500 after:mx-auto">
+  Tools
+</h2>
+
+
+
+  <div className="flex flex-wrap justify-center gap-10">
+    {tools.map((tool) => (
+      <div
+        key={tool.name}
+        onClick={() => window.open(tool.url, "_blank")}
+        className="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center w-40 transform transition-transform duration-300 hover:scale-105 cursor-pointer group"
+      >
+        <div className="mb-4 transform transition-transform duration-300 group-hover:scale-125">
+          {tool.icon}
+        </div>
+        <span className="text-white text-lg">{tool.name}</span>
+      </div>
+    ))}
+  </div>
+</section>
+
 
    {/* Projects Section */}
 <section id="project" className="py-20 px-4 text-center bg-black">
-  <h2 className="text-3xl font-semibold mb-4 text-white">Projects</h2>
-  <p className="text-lg text-gray-300 mb-10">Here are some projects I have worked on recently.</p>
+<h2 className="text-4xl font-extrabold mb-8 relative inline-block text-white after:block after:mt-2 after:h-1 after:w-50 after:bg-gradient-to-r after:from-yellow-400 after:via-red-500 after:to-pink-500 after:mx-auto">
+  Projects
+</h2>
+
+
+
 
   <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
     {[
@@ -194,19 +237,19 @@ I’m always eager to explore new tools, frameworks, and innovations in tech.
           <SiExpress key="express" className="text-white text-2xl" />,
         ],
       },
-      {
-        title: "INVOICE APP",
-        description: "A streamlined invoicing tool for managing client billing, creating digital invoices, and tracking payment statuses efficiently.",
-        Image: "/assets/images/invoice.png",
-        status: "Repo",
-        url: "https://github.com/lwshq/invoice-fe",
-        tech: [
-          <SiNextdotjs key="nextjs" className="text-white text-2xl" />,
-          <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
-          <SiTypescript key="typescript" className="text-blue-500 text-2xl" />,
-          <SiExpress key="express" className="text-white text-2xl" />,
-        ],
-      },
+      // {
+      //   title: "INVOICE APP",
+      //   description: "A streamlined invoicing tool for managing client billing, creating digital invoices, and tracking payment statuses efficiently.",
+      //   Image: "/assets/images/invoice.png",
+      //   status: "Repo",
+      //   url: "https://github.com/lwshq/invoice-fe",
+      //   tech: [
+      //     <SiNextdotjs key="nextjs" className="text-white text-2xl" />,
+      //     <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+      //     <SiTypescript key="typescript" className="text-blue-500 text-2xl" />,
+      //     <SiExpress key="express" className="text-white text-2xl" />,
+      //   ],
+      // },
       {
         title: "TODO LIST",
         description: "A to-do list is a tool for organizing tasks. It helps you keep track of what needs to be done, set priorities, and mark tasks as completed.",
@@ -255,8 +298,11 @@ I’m always eager to explore new tools, frameworks, and innovations in tech.
 </section>
 {/* Contact Section */}
 <section id="contact" className="py-20 px-4 text-center bg-black text-white">
-  <h2 className="text-3xl font-semibold mb-4">Let&apos;s build something together.</h2>
-  <p className="text-lg text-gray-300 mb-10"> Looking to hire a developer? I&apos;m open to freelance work or professional job. Let&apos;s bring your ideas to life.  </p>
+ <h2 className="text-4xl font-extrabold mb-8 relative inline-block text-white after:block after:mt-2 after:h-1 after:w-160 after:bg-gradient-to-r after:from-yellow-400 after:via-red-500 after:to-pink-500 after:mx-auto">
+  Let’s Build Something Together
+</h2>
+
+
 
   <form
     action="https://formspree.io/f/mvgrgpwj" // ✅ Replace this with your actual Formspree URL
