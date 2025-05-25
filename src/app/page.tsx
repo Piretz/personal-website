@@ -1,6 +1,4 @@
 'use client';
-
-
 import Image from "next/image";
 import Navbar from "./components/ui/navbar";
 import Footer from "./components/ui/footer";
@@ -15,7 +13,6 @@ import {
   SiExpress,
   SiFastapi,
   SiLaravel,
-  SiGit,
   SiTypescript,
   SiMysql,
   SiNpm,
@@ -25,7 +22,6 @@ import {
   SiCss3,
   SiJavascript,
   SiNextdotjs,
-
   SiVercel,
   SiNetlify
 } from "react-icons/si";
@@ -35,8 +31,6 @@ import {
   FaLinkedinIn,
   FaInstagram
 } from "react-icons/fa";
-
-
 
 export default function Home() {
 const technologies = [
@@ -52,15 +46,12 @@ const technologies = [
   { name: "NPM", icon: <SiNpm size={60} className="text-red-500" />, url: "https://www.npmjs.com/" },
 ];
 
-
 const tools = [
   { name: "Postman", icon: <SiPostman size={60} className="text-orange-400" />, url: "https://www.postman.com/" },
   { name: "GitHub", icon: <SiGithub size={60} className="text-white" />, url: "https://github.com/" },
   { name: "Vercel", icon: <SiVercel size={60} className="text-white" />, url: "https://vercel.com/" },
   { name: "Netlify", icon: <SiNetlify size={60} className="text-teal-400" />, url: "https://www.netlify.com/" },
 ];
-
-
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col">
@@ -109,26 +100,18 @@ const tools = [
           {/* Text Content */}
          <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
       <h2 className="text-4xl font-bold text-white animate-fade-in">
-  Hi, I'm Arjay, a Frontend Developer!
+  Hi I am Arjay, a Frontend Developer!
 </h2>
-
       <p className="text-lg text-gray-300">
         I’m a curious and driven developer passionate about turning ideas into real, functional products. Whether I’m building apps, solving challenges, or diving into new technologies, I give it my all. </p>
 
       <div className="space-y-4">
         <p className="text-gray-300">My name is Arjay Tebia, a 23-year-old developer based in Quezon City.
-       
     I&apos;m Arjay Tebia, 23 years old, from Quezon City...</p>
         <p className="text-gray-300"> I&apos;m a developer   </p>
-       
-    
       </div>
       <div>
-     
-
-
-
-I’m always eager to explore new tools, frameworks, and innovations in tech.
+I am always eager to explore new tools, frameworks, and innovations in tech.
       </div>
             <div className="flex justify-center lg:justify-start space-x-4 mt-6">
         <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded shadow">
@@ -169,8 +152,6 @@ I’m always eager to explore new tools, frameworks, and innovations in tech.
   Tools
 </h2>
 
-
-
   <div className="flex flex-wrap justify-center gap-10">
     {tools.map((tool) => (
       <div
@@ -193,10 +174,6 @@ I’m always eager to explore new tools, frameworks, and innovations in tech.
 <h2 className="text-4xl font-extrabold mb-8 relative inline-block text-white after:block after:mt-2 after:h-1 after:w-50 after:bg-gradient-to-r after:from-yellow-400 after:via-red-500 after:to-pink-500 after:mx-auto">
   Projects
 </h2>
-
-
-
-
   <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
     {[
       {
