@@ -9,6 +9,7 @@ import {
   RiTailwindCssFill,
   RiNodejsLine,
 } from "react-icons/ri";
+import { VscVscode } from "react-icons/vsc";
 import {
   SiExpress,
   SiFastapi,
@@ -16,14 +17,11 @@ import {
   SiTypescript,
   SiMysql,
   SiNpm,
-  SiPostman,
-  SiGithub,
   SiHtml5,
   SiCss3,
   SiJavascript,
   SiNextdotjs,
-  SiVercel,
-  SiNetlify
+  
 } from "react-icons/si";
 import {
   FaFacebookF,
@@ -31,6 +29,9 @@ import {
   FaLinkedinIn,
   FaInstagram
 } from "react-icons/fa";
+import { SiPostman, SiGithub, SiVercel, SiNetlify } from "react-icons/si";
+import { FaWindows } from "react-icons/fa";
+import { DiGit } from "react-icons/di";
 
 export default function Home() {
 const technologies = [
@@ -44,6 +45,7 @@ const technologies = [
   { name: "TypeScript", icon: <SiTypescript size={60} className="text-blue-500" />, url: "https://www.typescriptlang.org/" },
   { name: "MySQL", icon: <SiMysql size={60} className="text-blue-500" />, url: "https://www.mysql.com/" },
   { name: "NPM", icon: <SiNpm size={60} className="text-red-500" />, url: "https://www.npmjs.com/" },
+ 
 ];
 
 const tools = [
@@ -51,6 +53,9 @@ const tools = [
   { name: "GitHub", icon: <SiGithub size={60} className="text-white" />, url: "https://github.com/" },
   { name: "Vercel", icon: <SiVercel size={60} className="text-white" />, url: "https://vercel.com/" },
   { name: "Netlify", icon: <SiNetlify size={60} className="text-teal-400" />, url: "https://www.netlify.com/" },
+   { name: "VS Code", icon: <VscVscode size={60} className="text-blue-500" />, url: "https://code.visualstudio.com/" },
+  { name: "Windows", icon: <FaWindows size={60} className="text-blue-400" />, url: "https://www.microsoft.com/en-us/windows" },
+  { name: "Git", icon: <DiGit size={60} className="text-red-500" />, url: "https://git-scm.com/" }
 ];
 
   return (
