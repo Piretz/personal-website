@@ -182,6 +182,32 @@ I’m always eager to explore new tools, frameworks, and innovations in tech.
         ],
       },
       {
+        title: "E-COMMERCE",
+        description: "E-commerce, short for electronic commerce, refers to the buying and selling of goods or services over the internet. ",
+        Image: "/assets/images/ecommerce.png",
+        status: "Live",
+        url: "https://v0-new-project-vti3lhckcl9.vercel.app/",
+        tech: [
+          <SiNextdotjs key="nextjs" className="text-white text-2xl" />,
+          <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+          <SiTypescript key="typescript" className="text-blue-500 text-2xl" />,
+          <SiExpress key="express" className="text-white text-2xl" />,
+        ],
+      },
+      {
+        title: "INVOICE APP",
+        description: "A streamlined invoicing tool for managing client billing, creating digital invoices, and tracking payment statuses efficiently.",
+        Image: "/assets/images/invoice.png",
+        status: "Repo",
+        url: "https://github.com/lwshq/invoice-fe",
+        tech: [
+          <SiNextdotjs key="nextjs" className="text-white text-2xl" />,
+          <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+          <SiTypescript key="typescript" className="text-blue-500 text-2xl" />,
+          <SiExpress key="express" className="text-white text-2xl" />,
+        ],
+      },
+      {
         title: "TODO LIST",
         description: "A to-do list is a tool for organizing tasks. It helps you keep track of what needs to be done, set priorities, and mark tasks as completed.",
         Image: "/assets/images/todo.jpg",
