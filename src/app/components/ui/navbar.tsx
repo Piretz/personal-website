@@ -11,6 +11,7 @@ const Navbar = () => {
     { label: 'Home', href: '#home' },
     { label: 'About', href: '#about' },
     { label: 'Technology', href: '#technology' },
+    { label: 'Tools', href: '#tools' }, // <-- Added Tools here
     { label: 'Project', href: '#project' },
     { label: 'Contact', href: '#contact' },
   ];
@@ -22,7 +23,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link
           href="#home"
-          className="text-3xl font-extrabold bg-gradient-to-r from-green-400 to-blue-500  bg-clip-text hover:brightness-125 transition duration-300 text-white"
+          className="text-3xl font-extrabold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text hover:brightness-125 transition duration-300 text-white"
         >
           TEBIA
         </Link>
