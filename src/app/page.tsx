@@ -132,7 +132,7 @@ I am always eager to explore new tools, frameworks, and innovations in tech.
 
       {/* Technologies Section */}
       <section id="technology" className="py-20 px-4 text-center">
-    <h2 className="text-4xl font-extrabold mb-8 relative inline-block text-white after:block after:mt-2 after:h-1 after:w-70 after:bg-gradient-to-r after:from-yellow-400 after:via-red-500 after:to-pink-500 after:mx-auto">
+    <h2 className="text-4xl font-extrabold mb-8 relative inline-block text-white after:block after:mt-2 after:h-1 after:w- after:bg-gradient-to-r after:from-yellow-400 after:via-red-500 after:to-pink-500 after:mx-auto">
   Technologies
 </h2>
 
@@ -153,7 +153,7 @@ I am always eager to explore new tools, frameworks, and innovations in tech.
         </div>
       </section>
       <section id="tools" className="py-20 px-4 text-center">
-<h2 className="text-4xl font-extrabold mb-8 relative inline-block text-white after:block after:mt-2 after:h-1 after:w-40 after:bg-gradient-to-r after:from-yellow-400 after:via-red-500 after:to-pink-500 after:mx-auto">
+<h2 className="text-4xl font-extrabold mb-8 relative inline-block text-white after:block after:mt-2 after:h-1 after:w-30 after:bg-gradient-to-r after:from-yellow-400 after:via-red-500 after:to-pink-500 after:mx-auto">
   Tools
 </h2>
 
@@ -176,7 +176,7 @@ I am always eager to explore new tools, frameworks, and innovations in tech.
 
    {/* Projects Section */}
 <section id="project" className="py-20 px-4 text-center bg-black">
-<h2 className="text-4xl font-extrabold mb-8 relative inline-block text-white after:block after:mt-2 after:h-1 after:w-50 after:bg-gradient-to-r after:from-yellow-400 after:via-red-500 after:to-pink-500 after:mx-auto">
+<h2 className="text-4xl font-extrabold mb-8 relative inline-block text-white after:block after:mt-2 after:h-1 after:w-45 after:bg-gradient-to-r after:from-yellow-400 after:via-red-500 after:to-pink-500 after:mx-auto">
   Projects
 </h2>
   <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
@@ -219,19 +219,17 @@ I am always eager to explore new tools, frameworks, and innovations in tech.
           <SiExpress key="express" className="text-white text-2xl" />,
         ],
       },
-      // {
-      //   title: "INVOICE APP",
-      //   description: "A streamlined invoicing tool for managing client billing, creating digital invoices, and tracking payment statuses efficiently.",
-      //   Image: "/assets/images/invoice.png",
-      //   status: "Repo",
-      //   url: "https://github.com/lwshq/invoice-fe",
-      //   tech: [
-      //     <SiNextdotjs key="nextjs" className="text-white text-2xl" />,
-      //     <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
-      //     <SiTypescript key="typescript" className="text-blue-500 text-2xl" />,
-      //     <SiExpress key="express" className="text-white text-2xl" />,
-      //   ],
-      // },
+      {
+        title: "WEBSITE",
+        description: "i created this personal website to showcase my skills, projects, and experiences as a developer. It serves as a portfolio and a platform to connect with others.",
+        Image: "/assets/images/website.jpg",
+        status: "Repo",
+        url: "https://personal-website-three-neon-91.vercel.app/",
+        tech: [
+          <SiNextdotjs key="nextjs" className="text-white text-2xl" />,
+          <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+        ],
+      },
       {
         title: "TODO LIST",
         description: "A to-do list is a tool for organizing tasks. It helps you keep track of what needs to be done, set priorities, and mark tasks as completed.",
@@ -244,6 +242,8 @@ I am always eager to explore new tools, frameworks, and innovations in tech.
           <SiTypescript key="ts" className="text-blue-500 text-2xl" />,
         ],
       },
+
+      
     ].map((project, i) => (
       <div
         key={i}
@@ -280,7 +280,7 @@ I am always eager to explore new tools, frameworks, and innovations in tech.
 </section>
 {/* Contact Section */}
 <section id="contact" className="py-20 px-4 text-center bg-black text-white">
- <h2 className="text-4xl font-extrabold mb-8 relative inline-block text-white after:block after:mt-2 after:h-1 after:w-160 after:bg-gradient-to-r after:from-yellow-400 after:via-red-500 after:to-pink-500 after:mx-auto">
+ <h2 className="text-4xl font-extrabold mb-8 relative inline-block text-white after:block after:mt-2 after:h-1 after:w-100 after:bg-gradient-to-r after:from-yellow-400 after:via-red-500 after:to-pink-500 after:mx-auto">
   Let’s Build Something Together
 </h2>
 

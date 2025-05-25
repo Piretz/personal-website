@@ -16,12 +16,16 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full bg-gray-950/70 backdrop-blur-md p-4 shadow-lg sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-            {/* Logo */}
-      <Link href="#home" className="text-3xl font-extrabold text-white hover:text-green-400 transition-colors duration-300">
-        TEBIA
-      </Link>
+    <nav className="w-full bg-gray-950/70 backdrop-blur-lg p-4 shadow-xl sticky top-0 z-50 transition-all duration-300">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-2 md:px-4">
+        
+        {/* Logo */}
+        <Link
+          href="#home"
+          className="text-3xl font-extrabold bg-gradient-to-r from-green-400 to-blue-500  bg-clip-text hover:brightness-125 transition duration-300 text-white"
+        >
+          TEBIA
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 text-lg">
@@ -29,10 +33,10 @@ const Navbar = () => {
             <Link
               key={item.href}
               href={item.href}
-              className="text-white relative group transition"
+              className="text-white relative group transition font-medium"
             >
               {item.label}
-              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-green-400 transition-all group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-green-400 transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
         </div>
@@ -40,7 +44,7 @@ const Navbar = () => {
         {/* Hamburger Button */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-white text-3xl focus:outline-none"
+          className="md:hidden text-white text-3xl transition-transform duration-200 hover:scale-110 focus:outline-none"
           aria-label="Toggle menu"
         >
           {isOpen ? <HiOutlineX /> : <HiOutlineMenuAlt3 />}
@@ -49,21 +53,36 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div
-          className="md:hidden mt-4 px-4 py-4 space-y-4 bg-gray-900/90 backdrop-blur-md rounded-xl mx-2 shadow-inner animate-slideDown"
-        >
+        <div className="md:hidden mt-4 px-4 py-4 space-y-3 bg-gray-900/95 backdrop-blur-md rounded-2xl mx-2 shadow-lg animate-fadeInDown">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               onClick={() => setIsOpen(false)}
-              className="block text-white text-lg px-3 py-2 rounded-md hover:bg-green-600/20 transition-colors duration-300"
+              className="block text-white text-base px-3 py-2 rounded-md hover:bg-green-600/30 transition-colors duration-300"
             >
               {item.label}
             </Link>
           ))}
         </div>
       )}
+
+      {/* Animation styles */}
+      <style jsx>{`
+        @keyframes fadeInDown {
+          from {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-fadeInDown {
+          animation: fadeInDown 0.3s ease-out;
+        }
+      `}</style>
     </nav>
   );
 };
