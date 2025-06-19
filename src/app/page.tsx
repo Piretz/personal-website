@@ -32,7 +32,7 @@ import {
 import { SiPostman, SiGithub, SiVercel, SiNetlify } from "react-icons/si";
 import { FaWindows } from "react-icons/fa";
 import { DiGit } from "react-icons/di";
-
+import { SiSwagger } from "react-icons/si";
 export default function Home() {
 const technologies = [
   { name: "Next.js", icon: <RiNextjsFill size={60} className="text-white hover:animate-spin duration-700" />, url: "https://nextjs.org/" },
@@ -49,6 +49,7 @@ const technologies = [
 
 const tools = [
   { name: "Postman", icon: <SiPostman size={60} className="text-orange-400 hover:animate-bounce" />, url: "https://www.postman.com/" },
+  { name: "Swagger", icon: <SiSwagger size={60} className="text-green-500 hover:animate-pulse" />, url: "https://swagger.io/" },
   { name: "GitHub", icon: <SiGithub size={60} className="text-white hover:animate-pulse" />, url: "https://github.com/" },
   { name: "Vercel", icon: <SiVercel size={60} className="text-white hover:animate-spin duration-700" />, url: "https://vercel.com/" },
   { name: "Netlify", icon: <SiNetlify size={60} className="text-teal-400 hover:animate-spin duration-700" />, url: "https://www.netlify.com/" },
