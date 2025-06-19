@@ -222,7 +222,7 @@ I am always eager to explore new tools, frameworks, and innovations in tech.
         title: "WEBSITE",
         description: "i created this personal website to showcase my skills, projects, and experiences as a developer. It serves as a portfolio and a platform to connect with others.",
         Image: "/assets/images/website.jpg",
-        status: "Repo",
+        status: "Live",
         url: "https://arjay-tebia.vercel.app/",
         tech: [
           <SiNextdotjs key="nextjs" className="text-white text-2xl" />,
@@ -253,8 +253,6 @@ I am always eager to explore new tools, frameworks, and innovations in tech.
           <SiTypescript key="ts" className="text-blue-500 text-2xl" />,
         ],
       },
-
-      
     ].map((project, i) => (
       <div
         key={i}
