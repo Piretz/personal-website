@@ -35,27 +35,26 @@ import { DiGit } from "react-icons/di";
 
 export default function Home() {
 const technologies = [
-  { name: "Next.js", icon: <RiNextjsFill size={60} className="text-white" />, url: "https://nextjs.org/" },
-  { name: "Tailwind CSS", icon: <RiTailwindCssFill size={60} className="text-cyan-400" />, url: "https://tailwindcss.com/" },
-  { name: "Node.js", icon: <RiNodejsLine size={60} className="text-teal-400" />, url: "https://nodejs.org/" },
-  { name: "Express.js", icon: <SiExpress size={60} className="text-white" />, url: "https://expressjs.com/" },
-  { name: "FastAPI", icon: <SiFastapi size={60} className="text-teal-400" />, url: "https://fastapi.tiangolo.com/" },
-  { name: "HTML5", icon: <SiHtml5 size={60} className="text-cyan-400" />, url: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" },
-  { name: "Laravel", icon: <SiLaravel size={60} className="text-red-500" />, url: "https://laravel.com/" },
-  { name: "TypeScript", icon: <SiTypescript size={60} className="text-blue-500" />, url: "https://www.typescriptlang.org/" },
-  { name: "MySQL", icon: <SiMysql size={60} className="text-blue-500" />, url: "https://www.mysql.com/" },
-  { name: "NPM", icon: <SiNpm size={60} className="text-red-500" />, url: "https://www.npmjs.com/" },
- 
+  { name: "Next.js", icon: <RiNextjsFill size={60} className="text-white hover:animate-spin duration-700" />, url: "https://nextjs.org/" },
+  { name: "Tailwind CSS", icon: <RiTailwindCssFill size={60} className="text-cyan-400 hover:animate-spin duration-700" />, url: "https://tailwindcss.com/" },
+  { name: "Node.js", icon: <RiNodejsLine size={60} className="text-teal-400 hover:animate-spin duration-700" />, url: "https://nodejs.org/" },
+  { name: "Express.js", icon: <SiExpress size={60} className="text-white hover:animate-pulse" />, url: "https://expressjs.com/" },
+  { name: "FastAPI", icon: <SiFastapi size={60} className="text-teal-400 hover:animate-spin duration-700" />, url: "https://fastapi.tiangolo.com/" },
+  { name: "HTML5", icon: <SiHtml5 size={60} className="text-cyan-400 hover:animate-bounce" />, url: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" },
+  { name: "Laravel", icon: <SiLaravel size={60} className="text-red-500 hover:animate-pulse" />, url: "https://laravel.com/" },
+  { name: "TypeScript", icon: <SiTypescript size={60} className="text-blue-500 hover:animate-spin duration-700" />, url: "https://www.typescriptlang.org/" },
+  { name: "MySQL", icon: <SiMysql size={60} className="text-blue-500 hover:animate-spin duration-700" />, url: "https://www.mysql.com/" },
+  { name: "NPM", icon: <SiNpm size={60} className="text-red-500 hover:animate-ping" />, url: "https://www.npmjs.com/" },
 ];
 
 const tools = [
-  { name: "Postman", icon: <SiPostman size={60} className="text-orange-400" />, url: "https://www.postman.com/" },
-  { name: "GitHub", icon: <SiGithub size={60} className="text-white" />, url: "https://github.com/" },
-  { name: "Vercel", icon: <SiVercel size={60} className="text-white" />, url: "https://vercel.com/" },
-  { name: "Netlify", icon: <SiNetlify size={60} className="text-teal-400" />, url: "https://www.netlify.com/" },
-   { name: "VS Code", icon: <VscVscode size={60} className="text-blue-500" />, url: "https://code.visualstudio.com/" },
-  { name: "Windows", icon: <FaWindows size={60} className="text-blue-400" />, url: "https://www.microsoft.com/en-us/windows" },
-  { name: "Git", icon: <DiGit size={60} className="text-red-500" />, url: "https://git-scm.com/" }
+  { name: "Postman", icon: <SiPostman size={60} className="text-orange-400 hover:animate-bounce" />, url: "https://www.postman.com/" },
+  { name: "GitHub", icon: <SiGithub size={60} className="text-white hover:animate-pulse" />, url: "https://github.com/" },
+  { name: "Vercel", icon: <SiVercel size={60} className="text-white hover:animate-spin duration-700" />, url: "https://vercel.com/" },
+  { name: "Netlify", icon: <SiNetlify size={60} className="text-teal-400 hover:animate-spin duration-700" />, url: "https://www.netlify.com/" },
+  { name: "VS Code", icon: <VscVscode size={60} className="text-blue-500 hover:animate-bounce" />, url: "https://code.visualstudio.com/" },
+  { name: "Windows", icon: <FaWindows size={60} className="text-blue-400 hover:animate-spin duration-700" />, url: "https://www.microsoft.com/en-us/windows" },
+  { name: "Git", icon: <DiGit size={60} className="text-red-500 hover:animate-ping" />, url: "https://git-scm.com/" }
 ];
 
   return (
@@ -236,6 +235,18 @@ I am always eager to explore new tools, frameworks, and innovations in tech.
         Image: "/assets/images/todo.jpg",
         status: "Live",
         url: "https://to-do-project-nine-amber.vercel.app/",
+        tech: [
+          <SiNextdotjs key="next" className="text-white text-2xl" />,
+          <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+          <SiTypescript key="ts" className="text-blue-500 text-2xl" />,
+        ],
+      },
+          {
+        title: "RESOURCES",
+        description: "Developer Resource Hub is a modern, responsive web application built with Next.js and Tailwind CSS, designed to help developers discover and explore essential libraries, frameworks, and tools used in web development.",
+        Image: "/assets/images/framework.jpg",
+        status: "Live",
+        url: "https://libraries-frameworks.vercel.app/",
         tech: [
           <SiNextdotjs key="next" className="text-white text-2xl" />,
           <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
