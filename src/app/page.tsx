@@ -74,7 +74,7 @@ const tools = [
         </div>
         <div className="mt-8 flex space-x-4">
           <a
-            href="/assets/images/CV_Tebia_Arjay_Delacruz.pdf"
+            href="/assets/images/CV_Tebia_Arjay Delacruz.pdf"
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded shadow"
           >
             Download CV
@@ -122,7 +122,7 @@ I am always eager to explore new tools, frameworks, and innovations in tech.
         <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded shadow">
           Get a Quote
         </a>
-        <a href="/assets/images/CV_Tebia_Arjay_Delacruz.pdf" className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded shadow">
+        <a href="/assets/images/CV_Tebia_Arjay Delacruz.pdf" className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded shadow">
           View CV
               </a>
             </div>
