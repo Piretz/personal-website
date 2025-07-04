@@ -33,6 +33,7 @@ import { SiPostman, SiGithub, SiVercel, SiNetlify } from "react-icons/si";
 import { FaWindows } from "react-icons/fa";
 import { DiGit } from "react-icons/di";
 import { SiSwagger } from "react-icons/si";
+import { RiReactjsLine } from "react-icons/ri";
 export default function Home() {
 const technologies = [
   { name: "Next.js", icon: <RiNextjsFill size={60} className="text-white hover:animate-spin duration-700" />, url: "https://nextjs.org/" },
@@ -253,6 +254,17 @@ I am always eager to explore new tools, frameworks, and innovations in tech.
           <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
           <SiTypescript key="ts" className="text-blue-500 text-2xl" />,
         ],
+      },
+      {
+       title: "CONVERTER TOOLS",
+description: "Converter Tools is a simple and efficient platform that helps users convert files, formats, and units easily. It supports document, image, video, audio, and code format conversions. Designed for speed and ease of use, it’s perfect for students, professionals, and developers who need quick and reliable conversion solutions.",
+Image: "/assets/images/convert.png",
+status: "Live",
+url: "https://converter-tools.vercel.app/",
+tech: [
+  <RiReactjsLine key="react" className="text-cyan-400 text-2xl" />,
+  <RiTailwindCssFill key="tailwind" className="text-cyan-400 text-2xl" />,
+],
       },
     ].map((project, i) => (
       <div
